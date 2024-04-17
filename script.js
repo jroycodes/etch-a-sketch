@@ -1,8 +1,8 @@
 "use strict";
 
 function addRgb(e) {
-  const red = Math.floor(Math.random() * 10);
-  const green = Math.floor(Math.random() * 10);
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
   const blue = Math.floor(Math.random() * 256);
   e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
   e.target.removeEventListener("pointerover", addRgb);
@@ -23,7 +23,7 @@ function defaultGrid() {
 
 const gridChanger = document.getElementById("square_num");
 gridChanger.style.backgroundColor = "black";
-gridChanger.style.color = "yellow";
+gridChanger.style.color = "white";
 gridChanger.addEventListener("click", () => {
   let column = prompt("Insert number of squares for new grid");
   if (column > 0 && column <= 100) {
