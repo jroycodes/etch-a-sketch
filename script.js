@@ -4,19 +4,31 @@
 const container = document.querySelector("#container");
 
 // create a 16*16 grid of square divs
-let allDivs;
 let divs = 16;
 
-for (let i = 0; i < divs*divs; i++) {
-  allDivs = document.createElement("div");
-  allDivs.setAttribute("id", "theDiv");
+for (let i = 0; i < divs * divs; i++) {
+  const allDivs = document.createElement("div");
   allDivs.style.height = "1rem";
   allDivs.style.width = "1rem";
   allDivs.style.border = "1px solid black";
-//   allDivs.style.backgroundColor = "orangeRed";
+  allDivs.addEventListener("mouseenter", () => {
+    allDivs.style.backgroundColor = "yellow";
+  });
+  // change BC to blueViolet when mouse leaves div
+  allDivs.addEventListener("mouseleave", () => {
+    allDivs.style.backgroundColor = "blueViolet";
+  });
   container.appendChild(allDivs);
 }
 
+// // change BC to yellow whwn mouse enters div
+// mouseTarget.addEventListener("mouseenter", () => {
+//   mouseTarget.style.backgroundColor = "yellow";
+// });
+// // change BC to blueViolet when mouse leaves div
+// mouseTarget.addEventListener("mouseleave", () => {
+//   mouseTarget.style.backgroundColor = "blueViolet";
+// });
 
 // const btn = document.querySelector("#container");
 
