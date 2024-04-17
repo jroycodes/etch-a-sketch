@@ -19,7 +19,12 @@ body{
   margin-top: 2rem;
 }
 
-#theDiv:hover{
-  background-color: black;
+/* hover effect to create a pixelated trail */
+/* #theDiv{
+  background-color: orangered;
 }
+
+#theDiv:hover{
+  background-color: yellow;
+} */
 
