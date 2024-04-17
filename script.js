@@ -54,24 +54,3 @@ function customGrid(column) {
   }
 }
 defaultGrid();
-// // change BC to yellow whwn mouse enters div
-// mouseTarget.addEventListener("mouseenter", () => {
-//   mouseTarget.style.backgroundColor = "yellow";
-// });
-// // change BC to blueViolet when mouse leaves div
-// mouseTarget.addEventListener("mouseleave", () => {
-//   mouseTarget.style.backgroundColor = "blueViolet";
-// });
-
-// const btn = document.querySelector("#container");
-
-// function random(number) {
-//   return Math.floor(Math.random() * (number + 1));
-// }
-
-// function changeBackground() {
-//   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
-//   document.body.style.backgroundColor = rndCol;
-// }
-
-// btn.addEventListener("click", changeBackground);
